@@ -11,19 +11,21 @@ function getComputerChoice(){
 }
 
 
-console.log( getComputerChoice());
+const computerChoice = getComputerChoice();
+const mychoice = "rock";
 
-let computerChoice = getComputerChoice();
+console.log(computerChoice);
+
 
 function playGame(mychoice,computerChoice){
 
-    if (mychoice == computerChoice){
-        console.log("tie" );
-    }
-    else if((mychoice == 'rock' && computerChoice == 'scissor') || 
+    if ((mychoice == 'rock' && computerChoice == 'scissor') || 
     (mychoice == 'paper' && computerChoice == 'rock') ||
     (mychoice == 'scissors' && computerChoice == 'paper')){
         console.log("you win");
+    }
+    else if(mychoice == computerChoice){
+        console.log("tie" );
     }
     else{
         console.log("you lose");
@@ -31,6 +33,7 @@ function playGame(mychoice,computerChoice){
 }
 
 
-let mychoice = "rock";
 
-console.log(playGame());
+
+
+console.log(playGame(mychoice,computerChoice));
