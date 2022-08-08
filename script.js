@@ -12,7 +12,8 @@ function getComputerChoice(){
 
 
 const computerChoice = getComputerChoice();
-const mychoice = "rock";
+let mychoice = prompt("Choose your weapon(rock , paper ,scissor)", );
+mychoice = mychoice.toLowerCase();
 
 console.log(computerChoice);
 
@@ -23,6 +24,7 @@ function playGame(mychoice,computerChoice){
     (mychoice == 'paper' && computerChoice == 'rock') ||
     (mychoice == 'scissors' && computerChoice == 'paper')){
         console.log("you win");
+    
     }
     else if(mychoice == computerChoice){
         console.log("tie" );
@@ -33,6 +35,9 @@ function playGame(mychoice,computerChoice){
 }
 
 
+function game(){
+
+}
 
 
 
