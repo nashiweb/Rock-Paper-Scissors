@@ -16,7 +16,7 @@ function getComputerChoice(){
 
 
 const computerChoice = getComputerChoice();
-let mychoice = prompt("Choose your weapon(rock , paper ,scissor)", );
+//let mychoice = prompt("Choose your weapon(rock , paper ,scissor)", );
 mychoice = mychoice.toLowerCase();
 
 console.log(computerChoice);
