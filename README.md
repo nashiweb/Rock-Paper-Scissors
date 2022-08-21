@@ -10,5 +10,5 @@ your results will be displayed in the console
 
 for restarting the game you have to reload the page ;) 
 
-
+live link : https://nashiweb.github.io/Rock-Paper-Scissors/
 
