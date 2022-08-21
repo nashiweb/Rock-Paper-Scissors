@@ -1,0 +1,146 @@
+body {
+    background-image: linear-gradient(to right, rgb(3, 3, 3) , rgb(11, 3, 53) , rgb(16, 16, 20))
+}
+
+.gametitle {
+    color: red;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+    margin-top: 50px;
+
+}
+
+h2 {
+    text-align: center; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(240, 236, 0);
+}
+
+#rockbtn {
+    border-color: red;
+    background: url(Images/rock.png) transparent;
+    background-size: cover;
+    color: black;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+#paperbtn {
+    border-color: rgb(11, 55, 252);
+    background: url(images/paper.jpg);
+    background-size: cover;
+    color: black;
+}
+
+#scissorbtn {
+    border-color: rgb(209, 171, 2);
+    background: url(images/sissor.png);
+    background-size: cover;
+    color: black;
+    
+    
+}
+
+.buttdiv {
+        border-color: green;
+        background-color: rgba(106, 128, 255, 0.425);;
+        margin: auto;
+        width: 30%;
+        border: 3px solid green;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        border-radius: 100px;
+        
+}
+
+
+button { 
+    height: 200px;
+    width: 400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-right:10px;
+    font-size: 20px;
+    border-radius: 20px;
+    opacity: 0.5;
+    
+    
+}
+
+button:focus {
+    border: none;
+    
+}
+
+#rockbtn:hover {
+    
+    border: none;
+    cursor: pointer;
+    background-image: transparent 50%;
+    opacity: 1.0;
+    
+
+}
+
+#scissorbtn:hover {
+    background-color: rgb(2, 77, 9);
+    border: none;
+    cursor: pointer;
+    opacity: 1.0;
+
+}
+
+#paperbtn:hover {
+    background-color: rgb(22, 5, 71);
+    border: none;
+    cursor: pointer;
+    opacity: 1.0;
+
+}
+
+table, th, td {
+    
+    border: 1px solid;
+    border-color: rgb(190, 255, 11);
+    color: rgb(193, 207, 0);
+    text-align: center;
+    border-style:dotted;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    color: red;
+    font-size: 25px;
+    width: 200px;
+    height: 50px;
+}
+
+.table1 {
+    
+    align-items: center;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+
+    
+}
+
+td {
+    font-size: 40px;
+    background-color: yellow;
+    height: 100px;
+    color: black;
+}
+
+.win {
+    color: white;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100px;
+
+}

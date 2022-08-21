@@ -12,7 +12,8 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <h1>ROCK PAPER SCISSOR</h1>
+    <h1 class="gametitle">ROCK PAPER SCISSORS</h1>
+    <br>
 
     <div>
         <!-- 
@@ -20,36 +21,41 @@
             - These are for displaying both computer's and user's choice (as image) 
          -->
         <div>
-            <h2>Your Choice</h2>
-            <div>
-                <!-- image slot (userChoice) -->
-            </div>
+            <h2>Make Your Choice from below:</h2>
+           
         </div>
-        <div>
-            <h2>Computer Choice</h2>
-            <div>
-                <!-- image slot (computerChoice) -->
-            </div>
-        </div>
+      
+          
     </div>
 
-    <button id="rockbtn">Rock </button>
-    <button id="paperbtn">Paper</button>
-    <button id="scissorbtn">Scissors</button>
+    <div class="buttdiv">
+        <button id="rockbtn">ROCK </button>
+        <button id="paperbtn">PAPER</button>
+        <button id="scissorbtn">SCISSOR</button>
+    </div>
+    <br>
+    <br>
+    <br>
 
-    <div>
-        <!-- 
-            - In row
-            - Just like a score board
-         -->
-        <div>
-            <h2>your score</h2>
-            <span>0</span>
-        </div>
-        <div>
-            <h2>computer score</h2>
-            <span>0</span>
-        </div>
+    <div class="resultdiv">
+       
+        <table class="table1">
+            <tr>
+                <th> Your Choice</th>
+                <th>Computer's Choice</th>
+            </tr>
+            <tr>
+                <td> ----- </td>
+                <td>-----</td>
+                </tr>
+        </table>
+              
+        <!--Below code if you win -->
+    </div>
+    <br>
+    <div class="Windiv">
+        <h1 class="win"> YOU WIN..!</h1>
+
     </div>
 </body>
 </html>
