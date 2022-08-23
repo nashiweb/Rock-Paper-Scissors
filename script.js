@@ -1,14 +1,7 @@
-
-console.log("hello world");
-
+let playerScore = 0;
 let computerScore = 0;
-let myScore = 0;
 
-let result = ""; //result of single round
-
-
-// FUNCTION to randomly return rock paper or scissor       for computer
-function getComputerChoice(){
+function getComputerchoice() {
     let choice = ["rock","paper","scissor"];
     let randon_choice = Math.floor(Math.random() * choice.length);
     return choice[randon_choice];
@@ -19,28 +12,42 @@ const computerChoice = getComputerChoice();
 //let mychoice = prompt("Choose your weapon(rock , paper ,scissor)", );
 mychoice = mychoice.toLowerCase();
 
-console.log(computerChoice);
+function playRound(playerSelection,computerSelection) {
 
-// FUNCTION for the single round of the game
-function playGame(mychoice,computerChoice){
 
-    
+    playerSelection =  playerSelection.toLowerCase();
 
-    if ((mychoice == 'rock' && computerChoice == 'scissor') || 
-    (mychoice == 'paper' && computerChoice == 'rock') ||
-    (mychoice == 'scissors' && computerChoice == 'paper')){
-        result = "you win";
+
+    if ((playerSelection == 'rock' && computerSelection == 'scissor') || 
+    (playerSelection == 'paper' && computerSelection == 'rock') ||
+    (playerSelection == 'scissors' && computerSelection == 'paper')){
+
+        playerScore ++;
+        return "you win";
     }
-    else if(mychoice == computerChoice){
-        result = "tie";
+    else if(playerSelection == computerSelection){
+        return "tie";
     }
     else{
-        result = "you lost";
+        computerScore ++;
+        return "you lost";
     }
-    return result;
 }
 
 
-console.log(playGame(mychoice,computerChoice));
-console.log(mychoice);
 
+
+function game(){
+    for(let i = 1 ; i <= 5; i++ ){
+        const computerSelection = getComputerchoice();
+        const playerSelection = prompt( i +" enter your choice Rock Paper Scissor : ",)
+        console.log( i + " computer = " + computerSelection + "   " + "player = " + playerSelection);
+        console.log("computer score = " + computerScore + "    player Score = " + playerScore);
+        console.log(playRound(playerSelection,computerSelection));
+        alert(playRound(playerSelection,computerSelection));
+        console.log("");
+        console.log("");
+    }
+}
+
+game();
